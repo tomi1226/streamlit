@@ -94,9 +94,8 @@ def inputFunc(wfselected):
 #入力波形
 #入力波形プロット
 x = np.arange(-pi, pi, 0.001)
-y = [wfin(関数
 wfin = inputFunc(wfselected)
-x) for x in x]
+y = [wfin(x) for x in x]
 fig, ax = plt.subplots(nrows=1, ncols=1, figsize=(4, 3))
 ax.plot(x, y)
 wfin_chart.pyplot(fig)
